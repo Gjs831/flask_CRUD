@@ -1,0 +1,168 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 네비게이션 바 */
+.navbar {
+    background-color: #3a5a78;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 컨테이너 레이아웃 */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* 사이드바 */
+aside {
+    width: 250px;
+    background-color: #f5f7f9;
+    padding: 1.5rem;
+    border-right: 1px solid #eaecef;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+}
+
+aside a {
+    color: #455a64;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+aside a:hover {
+    background-color: #eaecef;
+    color: #2c3e50;
+}
+
+/* 액션 버튼 */
+.actions {
+    margin-top: 2rem;
+}
+
+.btn {
+    background-color: #5b8c85;
+    color: white !important;
+    text-align: center;
+    padding: 0.6rem !important;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #4a7870 !important;
+    color: white !important;
+}
+
+/* 메인 콘텐츠 영역 */
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.content-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eaecef;
+}
+
+/* 폼 스타일 */
+form {
+    margin-top: 1rem;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: #5b8c85;
+    box-shadow: 0 0 0 2px rgba(91, 140, 133, 0.2);
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #5b8c85;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a7870;
+}
+
+/* 삭제 버튼 스타일 */
+form input[value="delete"] {
+    background-color: #b56357;
+    padding: 0.5rem 1rem;
+}
+
+form input[value="delete"]:hover {
+    background-color: #a25249;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eaecef;
+    }
+}
